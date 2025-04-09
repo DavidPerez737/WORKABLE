@@ -292,7 +292,7 @@
     .section-divider {
       width: 90%;
       margin: 2rem auto;
-      border-top: 1px solid #666; /* Ajustamos grosor para móviles */
+      border-top: 1px solid #666;
     }
   
     .large-image-placeholder {
