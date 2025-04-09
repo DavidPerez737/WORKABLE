@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .header {
+    padding: 15px;
+    background: #a9cce3;
+    display: flex;
+    gap: 10px;
+    height: 10px;
+    margin: auto;
+    border-bottom: 1px solid black;
+  }
+  
+  h1 {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  h2 {
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  
+  .button {
+    height: 20px;
+    width: 50px;
+    margin-left: auto;
+    background: #a9cce3;
+  }
+  
+  .seccion {
+    background: whitesmoke;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Icon {
+    display: block;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+  
+  .TitEmpresa {
+    background: whitesmoke;
+    height: 55px;
+    width: 850px;
+    border: 1px solid black;
+    margin: 0;
+  }
+  
+  .TitEmpresa h2 {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  
+  .TitEmpresa p {
+    text-align: center;
+    font-size: 13px;
+    padding: auto;
+  }
+  
+  .TitEmpresa:hover {
+    background: white;
+  }
+  
+  .SecciReclutador {
+    background: whitesmoke;
+    height: 450px; 
+    width: 830px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .header-reclutador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .SecciReclutador h3 {
+    font-size: 17px;
+  }
+  
+  .SecciReclutador a {
+    font-size: 17px;
+    color: #800080; 
+  }
+  
+  .graficos-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .pie-chart {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #e0e0e0;
+  }
+  
+  .pie-chart-1 {
+    background: conic-gradient(#666 0% 30%, #e0e0e0 30% 100%);
+  }
+  
+  .pie-chart-2 {
+    background: conic-gradient(#666 0% 50%, #e0e0e0 50% 100%);
+  }
+  
+  .pie-chart-3 {
+    background: conic-gradient(#666 0% 20%, #e0e0e0 20% 100%);
+  }
+  
+  .PieChart {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .ButtonOfer {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  
+  .ButtonOfer:hover {
+    background-color: white;
+  }
+  
+  .EditText {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+  
+  h5 {
+    color: gray;
+  }
+  
+  a {
+    text-align: end;
+  }
+  
+  .line-charts-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 30px;
+  }
+  
+  .EditChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .EditChart h6 {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .EditChart p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .ver-mas-estadisticas {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .ver-mas-estadisticas:hover {
+    text-decoration: underline;
+  }
+  
+  .EmprGen-Container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 30px;
+    gap: 10px;
+  }
+  
+  .RowContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 30px;
+    gap: 10px;
+  }
+  
+  .RightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    align-items: flex-end;
+  }
+  
+  .Rectangulo {
+    width: 140px;
+    height: 80px;
+  }
+  
+  .Rectangulo svg:hover {
+    fill: white;
+  }
+  
+  .ContainerReviews {
+    width: 300px;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .ReviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ReviewHeader h3 {
+    font-size: 14px;
+    color: #343a40;
+    font-weight: bold;
+  }
+  
+  .ReviewHeader a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .ReviewHeader a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .EstadsReviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .stat {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: white;
+    border-radius: 3px;
+  }
+  
+  .stat p {
+    margin: 0;
+    font-size: 12px;
+    color: #495057;
+  }
+  
+  .Iconos {
+    display: flex;
+    gap: 3px;
+    font-size: 12px;
+  }
+  
+  .Iconos span {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .EmployerBranding {
+    width: 300px;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 10px; 
+  }
+  
+  .EmployerBranding h3 {
+    font-size: 14px;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .EmployerBranding p {
+    margin: 0;
+    font-size: 12px;
+    color: #495057;
+  }
