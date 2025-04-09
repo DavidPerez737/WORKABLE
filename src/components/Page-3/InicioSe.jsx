@@ -1,23 +1,32 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './InicioSe.css';
 
-function IniSes() {
+function InicioSe() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate('/page4');
+  };
+
   return (
     <div className="login-container">
-      <h1>Iniciar Sesión</h1>
-      <form className="login-form">
-        <div className="form-group">
-          <label htmlFor="username">Usuario</label>
-          <input type="text" id="username" placeholder="Ingresa tu usuario" />
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <div>
+          <label htmlFor="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Contraseña</label>
-          <input type="password" id="password" placeholder="Ingresa tu contraseña" />
+        <div>
+          <label htmlFor="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required />
         </div>
-        <button type="submit">Iniciar Sesión</button>
+        <button type="button" onClick={handleLogin}>
+          Iniciar Sesión
+        </button>
       </form>
     </div>
   );
 }
 
-export default IniSes;
+export default InicioSe;
