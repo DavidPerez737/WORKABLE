@@ -89,7 +89,7 @@
     display: block;
   }
   
-  /* === ESTILOS COMUNES PARA TÍTULOS Y PÁRRAFOS === */
+  /* === ESTILOS TÍTULOS Y PÁRRAFOS === */
   .section-title {
     font-size: 2rem;
     color: #333;
@@ -144,7 +144,7 @@
     font-size: 1rem;
   }
   
-  /* === SECCIÓN DE EMPRESAS (ASPIRANTES) === */
+  /* === SECCIÓN DE ASPIRANTE === */
   #companies-section {
     text-align: center;;
     background-color: white;
@@ -204,16 +204,25 @@
     text-align: center;
     padding: 3.125rem 1.25rem;
     background-color: #f9f9f9;
-    margin-top: 2.5rem; /* Aumentado de 2rem a 2.5rem */
-    margin-bottom: 2.5rem; /* Aumentado de 2rem a 2.5rem */
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
   
   #business-images {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 15rem;
     flex-wrap: wrap;
     margin-top: 2rem;
+  }
+
+  #business-text {
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    color: #666;
   }
   
   #business-images .image-placeholder {
@@ -278,6 +287,11 @@
     .section-text {
       font-size: 1rem;
     }
+
+    .business-T {
+      font-size: 1rem;
+
+    }
   
     .image-placeholder {
       width: 6rem;
@@ -292,7 +306,7 @@
     .section-divider {
       width: 90%;
       margin: 2rem auto;
-      border-top: 1px solid #666; /* Ajustamos grosor para móviles */
+      border-top: 1px solid #666;
     }
   
     .large-image-placeholder {

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header id="header">
-      <h2>h2</h2>
+      <h2>WORKABLE</h2>
       <div id="nav-links">
         <nav>nav1</nav>
         <nav>

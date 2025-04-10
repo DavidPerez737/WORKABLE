@@ -17,6 +17,7 @@ function CompaniesSection() {
       <div className="promo-text">
         <h2 className="section-title">h2</h2>
         <p className="section-text">p</p>
+        <p className="section-text">p</p>
       </div>
     </section>
   );

@@ -12,6 +12,11 @@ function BusinessSection() {
         <div className="image-placeholder"></div>
         <div className="image-placeholder"></div>
       </div>
+      <div id="business-text">
+        <p className="business-T">p</p>
+        <p className="business-T">p</p>
+        <p className="business-T">p</p>
+      </div>
     </section>
   );
 }

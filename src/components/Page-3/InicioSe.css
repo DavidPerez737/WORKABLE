@@ -18,24 +18,29 @@
 .login-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   width: 100%;
   max-width: 20rem;
+  padding: 2rem; /* Espaciado interno */
+  border: 1px solid #ddd; /* Borde del formulario */
+  border-radius: 0.5rem; /* Esquinas redondeadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra suave */
 }
 
-.form-group:nth-child(1) {
+.form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.form-group:nth-child(1) label {
+.form-group label {
   font-size: 1rem;
   color: #333;
   font-weight: 500;
 }
 
-.form-group:nth-child(1) input {
+.form-group input {
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ddd;
@@ -44,42 +49,8 @@
   width: 100%;
 }
 
-.form-group:nth-child(1) input:focus {
+.form-group input:focus {
   border-color: #1a73e8;
-}
-
-.form-group:nth-child(2) {
-  position: relative;
-  width: 100%;
-  margin: 1.5rem 0;
-  text-align: center;
-}
-
-.form-group:nth-child(2) label {
-  display: none;
-}
-
-.form-group:nth-child(2) input {
-  display: none;
-}
-
-.form-group:nth-child(2)::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-}
-
-.form-group:nth-child(2)::after {
-  content: 'O';
-  position: relative;
-  background-color: white;
-  padding: 0 0.5rem;
-  color: #666;
-  font-size: 0.9rem;
 }
 
 .login-form button {
@@ -94,14 +65,13 @@
   margin-top: 1rem;
 }
 
-.login-form::after {
-  content: 'Ingresar con Google';
+/* Estilos para el botón de Google (opcional) */
+.google-login {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   width: 100%;
-  max-width: 20rem;
   padding: 0.75rem;
   border: 1px solid #ddd;
   border-radius: 0.3125rem;
@@ -113,10 +83,36 @@
   margin-top: 1.5rem;
 }
 
-
-.login-form::after::before {
+.google-login::before {
   content: 'G';
   font-weight: bold;
   color: #4285f4;
-  margin-right: 0.5rem;
+}
+
+.separator {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.separator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #636363;
+  transform: translateY(-50%);
+}
+
+.separator span {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.75rem;
+  background-color: white;
+  color: #666;
+  font-size: 0.9rem;
+  z-index: 1;
 }
