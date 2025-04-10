@@ -1,117 +1,136 @@
 import React from 'react';
 import './Page4.css';
 
-// Componente de Ícono Reutilizable
-const NavIcon = ({ path, width = 24, text }) => (
-  <div className="page4-nav-item">
-    <svg className="page4-svg-icon" viewBox="0 0 16 16" width={width}>
-      <path d={path} />
-    </svg>
-    <li className="page4-nav-text">{text}</li>
-  </div>
-);
-
-// Componente Principal
-function Page4() {
-  // Datos para navegación
-  const navData = [
-    { path: "M8.354 1.146a...", text: "Inicio" },
-    { path: "M0 0h1v15...", text: "Reclutamiento", width: 100 },
-    { path: "M2.866 14.85c...", text: "Reviews", width: 60 },
-    // ... Agregar todos los items aquí
-  ];
-
-  // Datos para gráficos
-  const chartData = [
-    { type: 'pie', labels: ['Publicados', 'Destacados', 'Urgentes'] },
-    { type: 'line', points: ["0,80 30,60...", "0,90 30,70..."], titles: ['Activos', 'Postulados'] }
-  ];
-
+const Page4 = () => {
   return (
-    <div id="page4-container">
-      {/* Header */}
-      <header className="page4-header">
-        <h1 className="page4-main-title">WORKABLE</h1>
-        <div className="page4-header-group">
-          <h2 className="page4-subtitle">Enterprise plus 1000</h2>
-          <button className="page4-support-btn">Soporte</button>
+    <div className="page-bg">
+      <div className="container">
+        <div className="branding">
+          <span className="brand">WORKABLE</span>
+          <span className="plan">Enterprise Plus 1000</span>
         </div>
-      </header>
-
-      {/* Navegación */}
-      <nav className="page4-navigation">
-        <ul className="page4-nav-list">
-          {navData.map((item, i) => (
-            <NavIcon key={i} {...item} />
-          ))}
-        </ul>
-      </nav>
-
-      {/* Contenido Principal */}
-      <main className="page4-content">
-        {/* Sección Empresa */}
-        <section className="page4-company-section">
-          <div className="page4-company-info">
-            <h2>Empresa genérica</h2>
-            <p>Usuario administrador</p>
+        <div className="nav-bar">
+          <div className="nav-item">
+            <div className="nav-icon icon-home"></div>
+            <span className="nav-link">Inicio</span>
           </div>
-          <div className="page4-company-graphic">
-            {/* SVG simplificado */}
-            <svg className="page4-graphic">
-              <rect width="100%" height="100%" />
-              <line x1="0" y1="0" x2="100%" y2="100%" />
-              <line x1="0" y1="100%" x2="100%" y2="0" />
-            </svg>
+          <div className="nav-item">
+            <div className="nav-icon icon-recruitment"></div>
+            <span className="nav-link">Reclutamiento</span>
           </div>
-        </section>
-
-        {/* Sección Estadísticas */}
-        <section className="page4-stats-section">
-          <div className="page4-stats-header">
-            <h3>Reclutamiento</h3>
-            <a href="#gest">Gestionar avisos</a>
+          <div className="nav-item">
+            <div className="nav-icon icon-reviews"></div>
+            <span className="nav-link">Reviews</span>
           </div>
-
-          <div className="page4-charts">
-            {/* Gráficos de Pastel */}
-            <div className="page4-pie-charts">
-              {chartData[0].labels.map((label, i) => (
-                <div key={i} className="page4-pie-group">
-                  <div className={`page4-pie chart-${i+1}`} />
-                  <p>{label}</p>
-                </div>
-              ))}
+          <div className="nav-item">
+            <div className="nav-icon icon-employer"></div>
+            <span className="nav-link">Employer branding</span>
+          </div>
+          <div className="nav-item">
+            <div className="nav-icon icon-reports"></div>
+            <span className="nav-link">Informes</span>
+          </div>
+          <div className="nav-item">
+            <div className="nav-icon icon-settings"></div>
+            <span className="nav-link">Configuración</span>
+          </div>
+          <div className="nav-item">
+            <div className="nav-icon icon-support"></div>
+            <span className="nav-link">Soporte</span>
+          </div>
+        </div>
+        <div className="main-content">
+          <div className="left-column">
+            <div className="company-info">
+              <div className="company-logo"></div>
+              <div>
+                <h2 className="company-name">Empresa genérica</h2>
+                <p>Usuario administrador</p>
+              </div>
             </div>
-
-            {/* Gráficos de Línea */}
-            <div className="page4-line-charts">
-              {chartData[1].points.map((points, i) => (
-                <div key={i} className="page4-line-group">
-                  <h4>{chartData[1].titles[i]}</h4>
-                  <svg className="page4-line">
-                    <polyline points={points} />
-                  </svg>
+            <div className="recruitment">
+              <div className="recruitment-header">
+                <h3 className="section-title">Reclutamiento</h3>
+                <span className="manage-link">Gestionar avisos</span>
+              </div>
+              <div className="recruitment-cards">
+                <div className="card">
+                  <div className="circle-placeholder"></div>
+                  <p>Avisos publicados</p>
                 </div>
-              ))}
+                <div className="card">
+                  <div className="circle-placeholder"></div>
+                  <p>Avisos destacados</p>
+                </div>
+                <div className="card">
+                  <div className="circle-placeholder"></div>
+                  <p>Avisos urgentes</p>
+                </div>
+              </div>
+              <div className="publish-button">
+                <button className="btn">Publicar oferta</button>
+              </div>
+            </div>
+            <div className="statistics">
+              <div className="statistics-header">
+                <h3 className="section-title">Estadística</h3>
+                <span className="more-link">Ver más estadísticas</span>
+              </div>
+              <div className="statistics-graphs">
+                <div className="graph-card">
+                  <div className="graph-placeholder"></div>
+                  <p>Avisos Activos</p>
+                </div>
+                <div className="graph-card">
+                  <div className="graph-placeholder"></div>
+                  <p>Postulantes</p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-
-        {/* Sidebar */}
-        <aside className="page4-sidebar">
-          <div className="page4-reviews">
-            <h3>Reviews</h3>
-            {/* Contenido reviews */}
+          <div className="right-column">
+            <div className="image-placeholder"></div>
+            <div className="reviews">
+              <div className="reviews-header">
+                <h3 className="section-title">Reviews</h3>
+                <span className="reviews-link">Ver reviews</span>
+              </div>
+              <div className="reviews-content">
+                <p>Evaluación general</p>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
+                </div>
+                <p>Evaluaciones</p>
+                <div className="users">
+                  <i className="fas fa-user"></i>
+                  <i className="fas fa-user"></i>
+                  <i className="fas fa-user"></i>
+                  <i className="fas fa-user"></i>
+                  <i className="fas fa-user"></i>
+                </div>
+                <p>Comentarios</p>
+                <div className="comments">
+                  <i className="fas fa-comment"></i>
+                  <i className="fas fa-comment"></i>
+                  <i className="fas fa-comment"></i>
+                  <i className="fas fa-comment"></i>
+                  <i className="fas fa-comment"></i>
+                </div>
+              </div>
+            </div>
+            <div className="employer-branding">
+              <h3 className="section-title">Employer Branding</h3>
+              <p>Mejora la reputación de tu empresa</p>
+            </div>
           </div>
-          
-          <div className="page4-branding">
-            <h3>Employer Branding</h3>
-            <p>Mejora tu reputación</p>
-          </div>
-        </aside>
-      </main>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Page4;
