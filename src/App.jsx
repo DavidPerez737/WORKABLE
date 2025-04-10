@@ -5,10 +5,10 @@ import CompaniesSection from './components/Page-1/CompaniesSection';
 import BusinessSection from './components/Page-1/BusinessSection';
 import Page2 from './components/Page-2/page2';
 import IniSes from './components/Page-3/InicioSe';
+import Page4 from './components/Page-4/Page4'; // Importación nueva
 import './components/Page-1/page1.css';
 
 function App() {
-
   return (
     <Router>
       <Routes>
@@ -27,6 +27,7 @@ function App() {
         />
         <Route path="/page2" element={<Page2 />} />
         <Route path="/inisesion" element={<IniSes />} />
+        <Route path="/page4" element={<Page4 />} />
       </Routes>
     </Router>
   );

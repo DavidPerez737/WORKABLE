@@ -1,0 +1,30 @@
+#page4-container {
+    --primary-color: #1a73e8;
+    --secondary-color: #666;
+    --spacing: 1rem;
+    
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--spacing);
+  }
+  
+  .page4-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--spacing);
+    align-items: center;
+  }
+  
+  .page4-navigation {
+    display: flex;
+    gap: calc(var(--spacing) * 1.5);
+    padding: var(--spacing) 0;
+  }
+  
+  .page4-svg-icon {
+    transition: transform 0.2s ease;
+  }
+  
+  .page4-svg-icon:hover {
+    transform: scale(1.1);
+  }
