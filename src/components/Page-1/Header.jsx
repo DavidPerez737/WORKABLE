@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Page1.css'; // Importación del CSS centralizado
 
 function Header() {
   return (

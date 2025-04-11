@@ -1,7 +1,7 @@
 import React from 'react';
-import './Page1.css';
+import './Page1.css'; // Importación del CSS centralizado
 
-function BusinessSection() {
+function ApSection() {
   return (
     <section id="business-section">
       <hr className="section-divider" />
@@ -21,4 +21,4 @@ function BusinessSection() {
   );
 }
 
-export default BusinessSection;
+export default ApSection;

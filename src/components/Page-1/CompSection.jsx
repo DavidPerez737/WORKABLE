@@ -1,7 +1,7 @@
 import React from 'react';
-import './Page1.css';
+import './Page1.css'; // Importación del CSS centralizado
 
-function CompaniesSection() {
+function CompSection() {
   return (
     <section id="companies-section">
       <h1 className="section-title">h1</h1>
@@ -23,4 +23,4 @@ function CompaniesSection() {
   );
 }
 
-export default CompaniesSection;
+export default CompSection;

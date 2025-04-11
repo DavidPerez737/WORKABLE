@@ -1,5 +1,5 @@
 import React from 'react';
-import './Page1.css';
+import './Page1.css'; // Importación del CSS centralizado
 
 function SearchSection() {
   return (

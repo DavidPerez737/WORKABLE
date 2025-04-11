@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Page-1/Header';
 import SearchSection from './components/Page-1/SearchSection';
-import CompaniesSection from './components/Page-1/CompaniesSection';
-import BusinessSection from './components/Page-1/BusinessSection';
+import CompaniesSection from './components/Page-1/CompSection';
+import BusinessSection from './components/Page-1/ApSection';
 import Page2 from './components/Page-2/page2';
 import IniSes from './components/Page-3/InicioSe';
 import Page4 from './components/Page-4/Page4'; // Importación nueva
-import './components/Page-1/page1.css';
+import './components/Page-1/Page1.css'; // Importación del CSS centralizado
 
 function App() {
   return (
