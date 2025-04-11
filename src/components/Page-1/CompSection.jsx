@@ -1,23 +1,23 @@
 import React from 'react';
-import './Page1.css'; // Importación del CSS centralizado
+import './Page1.css';
 
 function CompSection() {
   return (
-    <section id="companies-section">
-      <h1 className="section-title">h1</h1>
-      <p className="section-text">p</p>
-      <div id="companies-images">
-        <div className="image-placeholder"></div>
-        <div className="image-placeholder"></div>
-        <div className="image-placeholder"></div>
-        <div className="image-placeholder"></div>
+    <section className="comp-section">
+      <h1 className="title">h1</h1>
+      <p className="text">p</p>
+      <div className="div-images">
+        <div className="img-placeholder"></div>
+        <div className="img-placeholder"></div>
+        <div className="img-placeholder"></div>
+        <div className="img-placeholder"></div>
       </div>
-      <hr className="section-divider" />
-      <div className="large-image-placeholder"></div>
-      <div className="promo-text">
-        <h2 className="section-title">h2</h2>
-        <p className="section-text">p</p>
-        <p className="section-text">p</p>
+      <hr className="divider" />
+      <div className="large-img-placeholder"></div>
+      <div className="promo">
+        <h2 className="title">h2</h2>
+        <p className="text">p</p>
+        <p className="text">p</p>
       </div>
     </section>
   );

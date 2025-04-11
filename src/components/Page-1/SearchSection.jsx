@@ -1,12 +1,12 @@
 import React from 'react';
-import './Page1.css'; // Importación del CSS centralizado
+import './Page1.css';
 
 function SearchSection() {
   return (
-    <section id="search-section">
-      <div id="search-container">
+    <section className="search-section">
+      <div className="search-container">
         <input id="search-input" type="text" placeholder="input" />
-        <button id="search-button">button</button>
+        <button className="search-btn">button</button>
       </div>
     </section>
   );

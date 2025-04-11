@@ -1,21 +1,21 @@
 import React from 'react';
-import './Page1.css'; // Importación del CSS centralizado
+import './Page1.css';
 
 function ApSection() {
   return (
-    <section id="business-section">
-      <hr className="section-divider" />
-      <h1 className="section-title">h1</h1>
-      <p className="section-text">p</p>
-      <div id="business-images">
-        <div className="image-placeholder"></div>
-        <div className="image-placeholder"></div>
-        <div className="image-placeholder"></div>
+    <section className="business-section">
+      <hr className="divider" />
+      <h1 className="title">h1</h1>
+      <p className="text">p</p>
+      <div className="business-img-list">
+        <div className="img-placeholder"></div>
+        <div className="img-placeholder"></div>
+        <div className="img-placeholder"></div>
       </div>
-      <div id="business-text">
-        <p className="business-T">p</p>
-        <p className="business-T">p</p>
-        <p className="business-T">p</p>
+      <div className="business-text-list">
+        <p className="text">p</p>
+        <p className="text">p</p>
+        <p className="text">p</p>
       </div>
     </section>
   );

@@ -13,14 +13,16 @@
 }
 
 .titulo {
-  font-size: 24px;
-  font-weight: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: #000;
+  font-size: 1rem;
 }
 
 .Titulo {
@@ -28,18 +30,20 @@ nav a {
   padding: 20px 0;
 }
 
-.main-content h1 {
-  font-size: 28px;
+.Titulo h1 {
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .link-ayuda {
   margin-bottom: 20px;
 }
 
-.ayuda a {
-  color: #007bff;
+.link-ayuda a {
+  color: #1a73e8;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 #Dv1 {
@@ -51,19 +55,21 @@ nav a {
 }
 
 .busqueda {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
   outline: none;
 }
 
 .boton-busqueda {
-  padding: 8px 16px;
-  font-size: 16px;
-  color: rgb(0, 0, 0);
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1a73e8;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.375rem;
+  cursor: pointer;
 }
 
 .filters-container {
@@ -76,12 +82,13 @@ nav a {
   flex: 1;
   border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 0.375rem;
 }
 
 .filter-section h2 {
-  font-size: 20px;
+  font-size: 1.5rem;
   margin-bottom: 15px;
+  color: #333;
 }
 
 .checkbox-group {
@@ -94,4 +101,6 @@ nav a {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-size: 1rem;
+  color: #333;
 }
