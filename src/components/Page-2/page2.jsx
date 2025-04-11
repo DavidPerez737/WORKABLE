@@ -1,7 +1,14 @@
 import React from 'react';
 import './Page2.css';
+import { useNavigate } from 'react-router-dom';
 
 function Page2() {
+  const navigate = useNavigate();
+
+  const Exit = () => {
+    navigate('/');
+  };
+
   return (
     <div className="App">
       <header className="header">
@@ -11,6 +18,9 @@ function Page2() {
           <a href="#ofertas">nav</a>
           <a href="#salarios">nav</a>
         </nav>
+        <button className="exit-button" onClick={Exit}>
+          🡨
+        </button>
       </header>
 
       <main className="Titulo">

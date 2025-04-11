@@ -5,8 +5,8 @@ import CompaniesSection from './components/Page-1/CompSection';
 import BusinessSection from './components/Page-1/ApSection';
 import Page2 from './components/Page-2/page2';
 import IniSes from './components/Page-3/InicioSe';
-import Page4 from './components/Page-4/Page4'; // Importación nueva
-import './components/Page-1/Page1.css'; // Importación del CSS centralizado
+import Page4 from './components/Page-4/Page4';
+import './components/Page-1/Page1.css';
 
 function App() {
   return (

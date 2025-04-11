@@ -1,103 +1,113 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Page4.css';
 
 const Page4 = () => {
+  const navigate = useNavigate();
+
+  const handleExit = () => {
+    navigate('/');
+  };
+
   return (
-    <div className="page-bg">
-      <div className="container">
-        <div className="branding">
-          <span className="brand">WORKABLE</span>
-          <span className="plan">Enterprise Plus 1000</span>
+    <div className="bg-page">
+      <div className="cont-main">
+        <div className="header-p4">
+          <span className="brand-name">WORKABLE</span>
+          <span className="plan-name">Enterprise Plus 1000</span>
+          <button className="btn-exit" onClick={handleExit}>
+            🡨
+          </button>
         </div>
-        <div className="nav-bar">
+        <div className="nav-p4">
           <div className="nav-item">
-            <div className="nav-icon icon-home"></div>
-            <span className="nav-link">Inicio</span>
+            <div className="icon-nav icon-home"></div>
+            <span className="link-nav">Inicio</span>
           </div>
           <div className="nav-item">
-            <div className="nav-icon icon-recruitment"></div>
-            <span className="nav-link">Reclutamiento</span>
+            <div className="icon-nav icon-recruit"></div>
+            <span className="link-nav">Reclutamiento</span>
           </div>
           <div className="nav-item">
-            <div className="nav-icon icon-reviews"></div>
-            <span className="nav-link">Reviews</span>
+            <div className="icon-nav icon-review"></div>
+            <span className="link-nav">Reviews</span>
           </div>
           <div className="nav-item">
-            <div className="nav-icon icon-employer"></div>
-            <span className="nav-link">Employer branding</span>
+            <div className="icon-nav icon-employer"></div>
+            <span className="link-nav">Employer Branding</span>
           </div>
           <div className="nav-item">
-            <div className="nav-icon icon-reports"></div>
-            <span className="nav-link">Informes</span>
+            <div className="icon-nav icon-report"></div>
+            <span className="link-nav">Informes</span>
           </div>
           <div className="nav-item">
-            <div className="nav-icon icon-settings"></div>
-            <span className="nav-link">Configuración</span>
+            <div className="icon-nav icon-setting"></div>
+            <span className="link-nav">Configuración</span>
           </div>
           <div className="nav-item">
-            <div className="nav-icon icon-support"></div>
-            <span className="nav-link">Soporte</span>
+            <div className="icon-nav icon-support"></div>
+            <span className="link-nav">Soporte</span>
           </div>
         </div>
-        <div className="main-content">
-          <div className="left-column">
-            <div className="company-info">
-              <div className="company-logo"></div>
+        <div className="main-cont">
+          <div className="col-left">
+            <div className="info-company">
+              <div className="logo-company"></div>
               <div>
-                <h2 className="company-name">Empresa genérica</h2>
+                <h2 className="name-company">Empresa genérica</h2>
                 <p>Usuario administrador</p>
               </div>
             </div>
-            <div className="recruitment">
-              <div className="recruitment-header">
-                <h3 className="section-title">Reclutamiento</h3>
-                <span className="manage-link">Gestionar avisos</span>
+            <div className="section-recruit">
+              <div className="header-recruit">
+                <h3 className="title-section">Reclutamiento</h3>
+                <span className="link-manage">Gestionar avisos</span>
               </div>
-              <div className="recruitment-cards">
-                <div className="card">
+              <div className="cards-recruit">
+                <div className="card-recruit">
                   <div className="circle-placeholder"></div>
                   <p>Avisos publicados</p>
                 </div>
-                <div className="card">
+                <div className="card-recruit">
                   <div className="circle-placeholder"></div>
                   <p>Avisos destacados</p>
                 </div>
-                <div className="card">
+                <div className="card-recruit">
                   <div className="circle-placeholder"></div>
                   <p>Avisos urgentes</p>
                 </div>
               </div>
-              <div className="publish-button">
-                <button className="btn">Publicar oferta</button>
+              <div className="cont-btn-publish">
+                <button className="btn-publish">Publicar oferta</button>
               </div>
             </div>
-            <div className="statistics">
-              <div className="statistics-header">
-                <h3 className="section-title">Estadística</h3>
-                <span className="more-link">Ver más estadísticas</span>
+            <div className="section-stats">
+              <div className="header-stats">
+                <h3 className="title-section">Estadística</h3>
+                <span className="link-more">Ver más estadísticas</span>
               </div>
-              <div className="statistics-graphs">
-                <div className="graph-card">
+              <div className="graphs-stats">
+                <div className="card-graph">
                   <div className="graph-placeholder"></div>
                   <p>Avisos Activos</p>
                 </div>
-                <div className="graph-card">
+                <div className="card-graph">
                   <div className="graph-placeholder"></div>
                   <p>Postulantes</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="right-column">
-            <div className="image-placeholder"></div>
-            <div className="reviews">
-              <div className="reviews-header">
-                <h3 className="section-title">Reviews</h3>
-                <span className="reviews-link">Ver reviews</span>
+          <div className="col-right">
+            <div className="img-placeholder"></div>
+            <div className="section-review">
+              <div className="header-review">
+                <h3 className="title-section">Reviews</h3>
+                <span className="link-review">Ver reviews</span>
               </div>
-              <div className="reviews-content">
+              <div className="cont-review">
                 <p>Evaluación general</p>
-                <div className="stars">
+                <div className="stars-review">
                   <i className="fas fa-star"></i>
                   <i className="fas fa-star"></i>
                   <i className="fas fa-star"></i>
@@ -105,7 +115,7 @@ const Page4 = () => {
                   <i className="fas fa-star-half-alt"></i>
                 </div>
                 <p>Evaluaciones</p>
-                <div className="users">
+                <div className="users-review">
                   <i className="fas fa-user"></i>
                   <i className="fas fa-user"></i>
                   <i className="fas fa-user"></i>
@@ -113,7 +123,7 @@ const Page4 = () => {
                   <i className="fas fa-user"></i>
                 </div>
                 <p>Comentarios</p>
-                <div className="comments">
+                <div className="comments-review">
                   <i className="fas fa-comment"></i>
                   <i className="fas fa-comment"></i>
                   <i className="fas fa-comment"></i>
@@ -122,8 +132,8 @@ const Page4 = () => {
                 </div>
               </div>
             </div>
-            <div className="employer-branding">
-              <h3 className="section-title">Employer Branding</h3>
+            <div className="section-branding">
+              <h3 className="title-section">Employer Branding</h3>
               <p>Mejora la reputación de tu empresa</p>
             </div>
           </div>

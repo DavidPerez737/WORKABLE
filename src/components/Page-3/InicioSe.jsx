@@ -5,16 +5,22 @@ import './InicioSe.css';
 function IniSes() {
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const hSubmit = (e) => {
     e.preventDefault();
-    // Aquí iría la lógica de autenticación
-    navigate('/page4'); // Redirige a page4
+    navigate('/page4');
+  };
+
+  const Exit = () => {
+    navigate('/');
   };
 
   return (
     <div className="login-container">
+      <button className="exit-button" onClick={Exit}>
+        🡨
+      </button>
       <h1>Iniciar Sesión</h1>
-      <form className="login-form" onSubmit={handleSubmit}>
+      <form className="login-form" onSubmit={hSubmit}>
         <div className="form-group">
           <label htmlFor="username">Usuario</label>
           <input
