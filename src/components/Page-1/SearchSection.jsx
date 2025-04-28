@@ -5,8 +5,8 @@ function SearchSection() {
   return (
     <section className="search-section">
       <div className="search-container">
-        <input id="search-input" type="text" placeholder="input" />
-        <button className="search-btn">button</button>
+        <input id="search-input" type="text" placeholder="Buscaro ofertas..." />
+        <button className="search-btn">BUSCAR</button>
       </div>
     </section>
   );

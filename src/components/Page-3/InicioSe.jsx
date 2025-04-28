@@ -50,7 +50,7 @@ function IniSes() {
         </div>
 
         <div className="google-login">
-          <span className="google-icon">G</span>
+          <span className="google-icon"></span>
           Ingresar con Google
         </div>
       </form>

@@ -22,10 +22,10 @@
   gap: 1rem;
   width: 100%;
   max-width: 20rem;
-  padding: 2rem; /* Espaciado interno */
-  border: 1px solid #ddd; /* Borde del formulario */
-  border-radius: 0.5rem; /* Esquinas redondeadas */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra suave */
+  padding: 2rem;
+  border: 1px solid #909090;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -43,7 +43,7 @@
 .form-group input {
   padding: 0.75rem;
   font-size: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #909090;
   border-radius: 0.3125rem;
   outline: none;
   width: 100%;
@@ -65,7 +65,6 @@
   margin-top: 1rem;
 }
 
-/* Estilos para el botón de Google (opcional) */
 .google-login {
   display: flex;
   align-items: center;
