@@ -11,10 +11,10 @@ function Header() {
           Buscar Ofertas
         </button>
         <button>
-          <Link to="/page2">Perfil Profesional</Link>
+          <Link to="/Sa">Perfil Profesional</Link>
         </button>
         <button>
-          <Link to="/page2">Salarios</Link>
+          <Link to="/SalariosPage">Salarios</Link>
         </button>
       </div>
       <div className="user-menu">
@@ -26,8 +26,8 @@ function Header() {
             <a href="#">a3</a>
           </div>
         </div>
-        <Link to="/inisesion" className="btn-link">Iniciar Sesión</Link>
-        <Link to="/inisesion" className="btn-link">Registrarse</Link>
+        <Link to="/Login" className="btn-link">Iniciar Sesión</Link>
+        <Link to="/Signup" className="btn-link">Registrarse</Link>
       </div>
     </header>
   );

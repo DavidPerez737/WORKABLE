@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Page-1/Header';
-import SearchSection from './components/Page-1/SearchSection';
-import CompaniesSection from './components/Page-1/CompSection';
-import BusinessSection from './components/Page-1/ApSection';
-import Page2 from './components/Page-2/page2';
-import IniSes from './components/Page-3/InicioSe';
+import Header from './components/MainPage/Header';
+import SearchSection from './components/MainPage/SearchSection';
+import CompaniesSection from './components/MainPage/CompSection';
+import BusinessSection from './components/MainPage/ApSection';
+import Page2 from './components/SalariosPage/page2';
+import Login from './components/LoginPage/Login';
 import Page4 from './components/Page-4/Page4';
-import './components/Page-1/Page1.css';
+import './components/MainPage/Page1.css';
+import SignUp from './components/SignUpPage/SignUp';
 
 function App() {
   return (
@@ -25,9 +26,10 @@ function App() {
             </>
           }
         />
-        <Route path="/page2" element={<Page2 />} />
-        <Route path="/inisesion" element={<IniSes />} />
+        <Route path="/SalariosPage" element={<Page2 />} />
+        <Route path="/Login" element={<Login />} />
         <Route path="/page4" element={<Page4 />} />
+        <Route path="/SignUp" element={<SignUp />} />
       </Routes>
     </Router>
   );

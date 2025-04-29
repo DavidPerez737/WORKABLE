@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './InicioSe.css';
+import './Login.css';
 
-function IniSes() {
+function Login() {
   const navigate = useNavigate();
 
   const hSubmit = (e) => {
@@ -58,4 +58,4 @@ function IniSes() {
   );
 }
 
-export default IniSes;
+export default Login;
