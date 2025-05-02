@@ -1,8 +1,8 @@
 import React from 'react';
-import './Page2.css';
+import './Salary.css';
 import { useNavigate } from 'react-router-dom';
 
-function Page2() {
+function Salary() {
   const navigate = useNavigate();
 
   const Exit = () => {
@@ -103,4 +103,4 @@ function Page2() {
   );
 }
 
-export default Page2;
+export default Salary;

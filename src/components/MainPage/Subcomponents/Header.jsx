@@ -1,20 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Page1.css';
 
 function Header() {
   return (
     <header className="header-p1">
       <h2>WORKABLE</h2>
       <div className="bt-list">
-        <button>
-          Buscar Ofertas
-        </button>
+        <button>Buscar Ofertas</button>
         <button>
           <Link to="/Sa">Perfil Profesional</Link>
         </button>
         <button>
-          <Link to="/SalariosPage">Salarios</Link>
+          <Link to="/Salary">Salarios</Link>
         </button>
       </div>
       <div className="user-menu">
@@ -27,7 +24,7 @@ function Header() {
           </div>
         </div>
         <Link to="/Login" className="btn-link">Iniciar Sesión</Link>
-        <Link to="/Signup" className="btn-link">Registrarse</Link>
+        <Link to="/SignUp" className="btn-link">Registrarse</Link>
       </div>
     </header>
   );

@@ -1,5 +1,4 @@
-import React from 'react';
-import './Page1.css';
+import React from 'react'
 
 function CompSection() {
   return (
